@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504370;
+}
+
+.body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "poppins" sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.section {
+  background: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  position: fixed;
+  padding: 0 30px;
+  left: 270px;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 1;
+}
+.padd-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container {
+  width: 1100px;
+  max-width: 100%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+.btn {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: white;
+  border-radius: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  background: red;
+}
+/* aside */
+.aside {
+  width: 270px;
+  background: var(--bg-black-100);
+  position: fixed;
+  height: 100%;
+  padding: 30px;
+  border-right: 2px solid var(--bg-black-50);
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.aside .logo {
+  position: absolute;
+  font-size: 30px;
+  top: 50px;
+  text-transform: capitalize;
+}
+
+.aside .logo a {
+  color: var(--text-black-900);
+  font-weight: 900;
+  padding: 10px 13px;
+  font-size: 35px;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.aside .logo a span {
+  font-family: "clicker script", cursive;
+  font-family: 40px;
+}
+
+.aside .logo a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid var(--skin-color);
+  border-left: 5px solid var(--skin-color);
+  left: 0;
+  bottom: 0;
+}
+
+.aside .logo a::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid var(--skin-color);
+  border-right: 5px solid var(--skin-color);
+  right: 0;
+  top: 0;
+}
+.aside .nav-toggler {
+  width: 45px;
+  height: 40px;
+  border: 1px solid var(--bg-black-100);
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  border-radius: 5px;
+  background: var(--bg-black-100);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside .nav-toggler span {
+  width: 18px;
+  height: 2px;
+  background: var(--skin-color);
+  display: inline-block;
+  position: relative;
+}
+.aside .nav-toggler span::before {
+  content: "";
+  height: 2px;
+  width: 18px;
+  background: var(--skin-color);
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+.aside .nav-toggler span::after {
+  content: "";
+  height: 2px;
+  width: 18px;
+  background: var(--skin-color);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.aside .nav {
+  margin-top: 50px;
+}
+
+.aside .nav li {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.aside .nav li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-black-900);
+  padding: 5px 15px;
+  border-bottom: 3px solid var(--bg-black-50);
+  display: block;
+}
+
+.aside .nav li a.active {
+  color: var(--skin-color);
+}
+.aside .nav li a i {
+  margin-right: 10px;
+}
+
+/* home */
+.home {
+  min-height: 100vh;
+  display: flex;
+  color: var(--text-black-900);
+}
+.home .home-info {
+  max-width: 60%;
+  flex: 0 0 60%;
+}
+.home .home-img {
+  max-width: 40%;
+  flex: 0 0 40%;
+  text-align: center;
+  position: relative;
+}
+.home .home-img img {
+  height: 400px;
+}
+h3.hello {
+  font-size: 30px;
+  margin: 15px 0;
+}
+h3.hello span {
+  font-family: "clicker script", cursive;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--skin-color);
+}
+h3.my-profesi {
+  font-size: 28px;
+  margin: 15px 0;
+}
+.typing {
+  color: var(--skin-color);
+}
+.home-info p {
+  margin-bottom: 70px;
+  font-size: 20px;
+  color: var(--text-black-900);
+}
